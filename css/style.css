@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    perspective: 700px;
+}
+header{
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 0;
+} 
+.header_logo .logo,.footer_logo .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.header_logo ,.footer_logo{
+    display: flex;
+    align-items: center;
+}
+.header_title1{
+    color: black;
+}
+.header_title2{
+    color: rgb(105, 105, 105);
+}
+.header_title1,.header_title2,.footer_title1,.footer_title2{
+    margin-left: 10px;
+}
+.header_title1,.header_title2,.header_links li,.main_p,.main_info h2,.main_info h1,.section1_info,.trending_header,.trending_info h5,.customer_titles h2,.customer_info,.you_title,.you_info h5,.news_title,.news_p1,.news_info h4,.news_info a,.icons_item h5,.footer_head_info h4,.footer_btns input,.footer_title1,.footer_title2,.footer_item{
+    text-transform: capitalize;
+}
+.header_links li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 22px;
+    position: relative;
+}
+.header_links{
+    list-style-type: none;
+}
+.header_links li a{
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+    padding: 5px 10px;
+}
+.header_icon i{
+    margin-left: 10px;
+    font-size: 22px;
+}
+.header_icon i:hover,.main_info h2,.trending_a1,.trending_item:hover h5,.you_item:hover h5,.news_item:hover h4,.footer_p1{
+   color: rgb(255, 91, 32);
+}
+.icon_cart{
+    position: relative;
+}
+.icon_count{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    padding: 2px 5px;
+    transition: 0s;
+}
+.icon_count,.trending_line,.trending_icons a:hover,.you_icons a:hover,.footer_btns button{
+    background-color: rgb(255, 91, 32);
+}
+.icon_cart:hover .icon_count{
+   transform: translateY(-5px);
+}
+.main_p{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 45px;
+    line-height: 2.2;
+    font-size: 19px;
+    word-spacing: 2px;
+    transition: all 1s;
+}
+.main_p a{
+    color: rgb(204, 202, 202);
+    text-decoration: none;
+}
+main,.trending{
+    background-color: white;
+}
+main,.trending,.you,.news{
+    width: 100%;
+    height: 100vh;
+}
+.main_info{
+    text-align: center;
+    margin-top: 105px;
+}
+.main_image{
+    transform-style: preserve-3d;
+}
+.main_content{
+    justify-content:space-around;
+    align-items: flex-end;
+}
+.main_image img {
+    transform: matrix3d(1.305, 0, 0.50, 0, 0.00, 1.6, 0.00, 0, -0.5, 0, 0.87, 0, -90, 120, 410, 1);
+}
+.main_info h2,.main_info h1{
+    margin: 10px 0px;
+}
+.main_info h2{
+    font-family: "Dancing Script", serif;
+    font-size: 50px;
+    padding-top: 75px ;
+}
+.main_info p{
+   margin: 20px 200px;
+}
+.main_info p,.section1_info a,.trending_icons a i:hover,.you_icons a i:hover{
+    color: rgb(147, 145, 145);
+}
+.main_info button{
+    width: 135px ;
+    height: 50px;
+    margin: 0px 0px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.main_info button:hover{
+    background-color: rgb(250, 242, 242);
+    color: black;
+    border: 1px solid black;
+}
+.section1,.section1_parent{
+    width: 100%;
+    height:60vh;
+}
+.section1,.customer,.icons{
+    background-color:rgb(251, 245, 245);
+}
+.section1_parent{
+    justify-content:space-evenly;
+    align-items: center;
+}
+.section1_div1{
+    width: 24%;
+    height: 330px ;
+    position: relative;
+    overflow: hidden;
+    transition: all .1s;
+}
+.section1_div1:hover .section1_image {
+    scale: 1.1;
+}
+.section1_image1{
+    background-image: url(../images/istockphoto-907865186-612x612.jpg);
+}
+.section1_image2{
+    background-image: url(../images/8588.jpg);
+}
+.section1_image3   {
+    background-image: url(../images/baby-wearing-bear-suit-is-smiling-bed_962508-6278.avif);
+}
+.section1_image1,.section1_image2,.section1_image3,.you_image1,.you_image2,.you_image3,.you_image4,.trending_item .img1,.trending_item .img2,.trending_item .img3,.trending_item .img4,.trending_img5,.customer_img ,.you_image::after,.news_item .img1,.news_item .img2,.news_item .img3{
+    background-size: cover;
+}
+.section1_image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+.section1_info h3{
+   padding-top:100px ;
+   color: white;
+}
+.section1_info a{
+    text-decoration: none;
+    display: none;
+}
+.main_p .main_line{
+    margin-top: -7px;
+    margin-left: 975px;
+    width: 80px;
+    background-color: rgb(147, 145, 145);
+} 
+.section1_info .section1_line,.main_p .main_line{
+    height: 1.5px ;
+} 
+.section1_info .section1_line{
+    margin: auto;
+    display: none;
+    margin-top: 3px;
+    width: 90px;
+    height: 1.5px;
+    background-color: rgb(147, 145, 145);
+}
+.section1_div1:hover a, .section1_div1:hover .section1_line,.section1_div1:hover a{
+    display: block;
+}
+.section1_div1:hover .section1_info{
+  margin-top: -30px;
+}
+.section1_info{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transition: all 1s;
+    font-size: 22px;
+} 
+.trending_header{
+    width: 87%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 40px;
+    margin: auto;
+}
+.trending_links li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+} 
+.trending_a1{
+    text-decoration: none;
+}
+.trending_links li .trending_a{
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+}
+.trending_main_line{
+    width: 87%;
+    height: 1px;
+    background-color: rgb(185, 184, 184);
+    margin: auto;
+}
+.trending_line{
+    width: 71px;
+    height: 4px;
+    margin-left: 1177px;
+    margin-top: 20px;
+}
+ .trending_content,.you_content{
+    width: 88%;
+    margin: auto;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 450px;
+ }
+ .trending_parent,.you_parent{
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 96%;
+    height: 450px;
+ }
+ .trending_item,.you_item{
+    width: 24%;
+    height: 100%;
+ }
+ .trending_img,.you_image{
+    height: 75%;
+    position: relative;
+}
+.trending_item .img1{
+    background-image: url(../images/AECC518B-9784-4EB6-9DD3-4811834694F6-847x1024.jpeg);
+}
+.trending_item .img2{
+    background-image: url(../images/fd1fd9525665324263acfe19d784ccc6.jpg);
+}
+.trending_item .img3{
+    background-image: url(../images/c7e6a187a213ee9fd148049ee8c90a97.jpg);
+}
+.trending_item .img4{
+    background-image: url(../images/ffaee0369a63503ba5492f658f0613b8.jpg);
+}
+.trending_icons{ 
+    align-items: center;
+    margin: auto;
+}
+.trending_item:hover .trending_icons{
+    display: flex;
+}
+.trending_icons,.you_icons{
+    width: 56%;  
+     height: 47px; 
+     margin-top: 270px; 
+    display: none; 
+    background-color: white;
+}
+.trending_icons a ,.you_icons a{
+    color: black;
+    font-size: 30px;
+    width: 34%; 
+    text-align: center;
+}
+.trending_img5{
+    height: 75%;
+    width: 100%;
+    height: 100%;
+}
+ .trending_img5{
+    position: absolute;
+    background-image: url(../images/2fb774aea9c59916b001ade08185f2af.jpg);
+    transform: rotate(90deg);
+    transition:  4s;
+    display: none;
+}
+.trending_item:hover .trending_img5{
+    transform: rotate(0deg);
+    display: block;
+    transition: all 2s;
+}
+.trending_info{
+    text-align: center;
+}
+.trending_info h5{
+    margin: 20px 0px 10px 0px;
+}
+.trending_info span{
+    font-size: 23px;
+}
+.trending_span{
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+ .customer{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    border-top: 2px solid rgb(185, 184, 184);
+}
+.customer_items{
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.customer_item{
+    width: 70%;
+}
+.customer_titles{
+    text-align: center;
+}
+.customer_titles p{
+    margin:40px 60px ;
+}
+.customer_img{
+    width: 80px ;
+    height: 80px;
+   border-radius: 50%;
+   background-image: url(../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8zNl9yZWFsaXN0aWNfcGhvdG9ncmFwaF9vZl9hX2NvbmZpZGVuY2VfdWFlX2J1c18xOTg4NTcwNy1iNDc3LTQyMjgtYTE2OC1lODk2ZmQxZWFiZTFfMS5qcGc.jpg);
+}
+.customer_content{
+    justify-content: center;
+    align-items: center;
+}
+.customer_info{
+    margin-left: 10px;
+}
+.customer_info p{
+    font-size: 20px;
+}
+.you,.customer,.news{
+    border-bottom: 2px solid rgb(185, 184, 184);
+}
+.you_title{
+    text-align: center;
+    padding-top: 80px;
+}
+.you_image1{
+    background-image: url(../images/f0470da999be14b47e1891eaebbf1ce4.jpg);
+}
+.you_image2{
+    background-image: url(../images/c95044eaaf335670524b4c9d4f3c7afe.jpg);
+}
+.you_image3{
+    background-image: url(../images/pngtree-hair-shampoo-or-lotion-in-transparent-water-splash-banner-png-image_7781284.png);
+}
+.you_image4{
+    background-image: url(../images/dGlik.jpg);
+}
+.you_image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    transition: all .6s;
+   background-image: url(../images/e322c4b664b30437a2b9f6e09aa04986.jpg);
+}
+.you_image:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.you_icons{
+    z-index: 10;
+    position: absolute;
+   margin-left: 65px;
+}
+.you_image:hover .you_icons{
+    display: block;
+
+}
+.you_icons a i,.trending_icons a i{
+    line-height: 47px;
+}
+.you_info{
+    text-align: center;
+}
+.you_info h5{
+    margin: 20px 0px 10px 0px;
+}
+.you_info span{
+    font-size: 23px;
+}
+.you_span{
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.you_arrow,.customer_arrow,.trending_arrow{
+    font-size: 27px;
+}
+.news_title{
+   padding-top: 30px ;
+   text-align: center;
+}
+.news_content{
+    width: 86%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    height: 600px;
+}
+.news_item{
+    width: 30%;
+}
+.news_img{
+    height:65% ;
+}
+.news_item .img1{
+    background-image: url(../images//PhotoRoom-20230523_224114_4237b3c3-01aa-4161-9509-1cceb95d8b01.webp);
+}
+.news_item .img2{
+    background-image: url(../images/2019-Luxury-Vintage-Rimless-sunglasses-women-Brand-Designer-Oversized-sunglasses-Female-sun-glasses-for-lady-Mirror.avif);
+}
+.news_item .img3{
+    background-image: url(../images/9-Best-Instagram-Niches-in-2022-Beauty-Niche.jpg);
+}
+.news_info{
+    padding-top: 20px;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: self-start;
+}
+.news_p1{
+    font-size: 21px;
+}
+.news_p2{
+    font-size: 21px;
+    letter-spacing: .6px;
+    line-height: 27px;
+}
+.news_info a{
+    color: black;
+}
+.news_item:hover .news_img{
+    scale: 1.03;
+}
+.news_info a:hover{
+    scale: 1.1;
+}
+.icons{
+    width: 100%;
+    height: 40vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons_item{
+    text-align: center;
+}
+.icons_item i{
+    font-size: 45px;
+}
+.footer_icons a,.icons_item i,.news_p2,.news_p1,.you_arrow,.you_item:hover .you_span,.customer_arrow,.customer_info p,.customer_titles p,.trending_arrow,.trending_item:hover .trending_span{
+    color:rgb(151, 151, 151) ;
+}
+.icons_item h5{
+    margin-top: 10px;
+}
+.icons_item p{
+    font-size: 22px;
+    margin-top: 10px;
+    color: rgb(40, 39, 39);
+} 
+footer{
+    width: 100%;
+    height: 77vh;
+    background-color: rgb(18, 16, 16);
+}
+.footer_head{
+    height: 18%;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer_head_info h4{
+    color: white;
+}
+.footer_head_info p{
+    margin-top: 10px;
+    font-size: 21px;
+    color: rgb(220, 212, 212);
+}
+.footer_btns input{
+    width: 370px;
+    height: 45px;
+    padding-left: 16px;
+    font-size: 20px;
+    border: none;
+}
+.footer_btns button{
+    width: 150px ;
+    height: 45px;
+    font-size: 23px;
+    color: white;
+    border: none;
+    transition:  all .6s;
+}
+.footer_icons a{
+    margin-left: 6px;
+    transition: all 1s;
+}
+.footer_icons a:hover{
+    color: white;
+}
+.footer_icons i:hover{
+    scale: 1.1;
+}
+.footer_btns button:hover{
+    cursor: pointer;
+    transform: scale(1.07,1.2);
+}
+.footer_line1{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(185, 184, 184);
+    margin: auto;
+}
+.footer_content{
+    height:72% ;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+.footer_head,.footer_content,.icons,.news_content,.you_image:hover .you_icons,.customer_content,.customer_items,.trending_icons,.trending_parent,.you_parent,.trending_content,.you_content,.trending_header,.section1_parent,.main_content{
+    display: flex;
+    flex-direction: row;
+}
+.footer_title1{
+    color: white;
+    display: inline;
+}
+.footer_title2{
+    color:rgb(220, 212, 212) ;
+}
+.footer_item h4{
+    color: white;
+}
+.footer_links {
+    margin-top: 20px ;
+}
+.footer_links li{
+    margin-top: 15px;
+}
+.footer_links a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 21px;
+    transition: all .7s;
+}
+.footer_links li:hover{
+    scale: 1.04;
+}
+.footer_links a:hover{
+    text-decoration: underline;
+}
+.footer_line2{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(185, 184, 184);
+    margin: auto;
+}
+.footer_p{
+    text-align: center;
+    margin-top: 15px;
+    font-size:21px ;
+}
+.footer_p,.footer_links a{
+    color:rgb(171, 171, 171) ;
+}
+.footer_heart{
+    color: rgb(85, 2, 2);
+}
